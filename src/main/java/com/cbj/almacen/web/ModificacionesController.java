@@ -48,7 +48,7 @@ public class ModificacionesController {
     private ClienteManager clienteManager;
 
     @Autowired
-    private NotasManager notasManager;
+    private NotasManager noktasManager;
 
     @Autowired
     private UsuarioManager usuarioManager;
