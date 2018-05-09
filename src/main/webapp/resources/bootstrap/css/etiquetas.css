@@ -1,0 +1,109 @@
+.etiqueta-container{
+    width:10cm;
+    height:7.5cm;
+    margin:0 auto;
+    border:1px solid rgb(22, 22, 22);
+    padding: 20px;
+    border-radius: 10px;
+    font-size:12px;
+    position: relative;
+}
+
+.cliente{
+    width:100%;position: relative;
+}
+.wrap-cliente{
+    width:70%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.cliente-id{
+
+    font-size:15px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+.codigo-barras{
+    width: 28%;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.codigo-barras img{
+    width:100%;
+    height: auto;
+}
+.producto-nombre{
+    font-weight: 600;
+    font-size:12px;
+}
+
+.producto-cad{
+    font-size:10px;
+}
+.body-etq{
+    margin-top:10px;
+    position: relative;
+}
+.wrap-qr{
+    width:48%;
+    display: block;
+    position: relative;
+}
+.cont-qr{
+    width: 100%;
+}
+.wrap-info{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+}
+.titulo-ubi{
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+.cont-qr img{
+    width:96%;
+    height: auto;
+}
+.fecha-inicio{font-size:10px;}
+.row{
+    margin-bottom:10px;
+}
+.cont-name{
+    font-size:14px;
+    font-weight: 600;
+}
+.cont-33{
+    display: inline-block;
+    margin-right: 10px;
+    width: 45px;
+}
+.id-qr{
+    font-weight:600;
+}
+.cont-5{
+    display:inline-block;
+    width: 49%;
+}
+.cont-33:last-child{
+    margin-right:0;
+}
+@media print{
+    @page {
+        size: 10cm 7.5cm; /* landscape */
+        margin: 0;
+
+    }
+    .etiqueta-container{
+        width:10cm;
+        height: 7.5cm;
+        display: block;
+        border:none;
+    }
+
+}

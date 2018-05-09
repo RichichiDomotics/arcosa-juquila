@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="poi">
+    <CLASSES>
+      <root url="file://$MAVEN_REPOSITORY$/org/apache/poi" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$MAVEN_REPOSITORY$/org/apache/poi/docs/apidocs" />
+    </JAVADOC>
+    <SOURCES />
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/apache/poi" recursive="false" />
+  </library>
+</component>
