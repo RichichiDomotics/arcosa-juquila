@@ -24,6 +24,7 @@
 		});
 	});
 </script>
+
 <ul class="nav nav-tabs" >
 	<li role="presentation" class="dropdown">
 		<a class="dropdown-toggle" href="<c:url value="home"/>" >
@@ -41,13 +42,13 @@
 			</a>
 			<b class="arrow"></b>
 			<ul class="dropdown-menu" role="menu">
-				<li class="hover">
+				<!--<li class="hover">
 					<a href="<c:url value="v_ingresoPreVehiculo"/>">
 						<i class="icon-download-alt  fa fa-caret-right"></i>
 						Pre-Registro de Veh&iacute;culos
 					</a>
 					<b class="arrow"></b>
-				</li>
+				</li> -->
 				<li class="hover">
 					<a href="<c:url value="v_listaPreVehiculo"/>">
 						<i class="icon-download-alt  fa fa-caret-right"></i>
@@ -74,20 +75,23 @@
 			</a>
 			<b class="arrow"></b>
 			<ul class="dropdown-menu" role="menu">
-				<li class="hover">
+				<!--<li class="hover">
 					<a href="<c:url value="adm_ingresoVehiculo"/>">
 						<i class="icon-exchange fa fa-caret-right"></i>
 						Registra Ingreso de Veh&iacute;culos
 					</a>
 					<b class="arrow"></b>
-				</li>
-				<li class="hover">
+				</li> -->
+
+				<!-- <li class="hover">
 					<a href="<c:url value="/alm_consultaIngresos" />">
 						<i class="icon-exchange fa fa-caret-right"></i>
 						Captura Ingresos
 					</a>
 					<b class="arrow"></b>
 				</li>
+				-->
+				<!--
 				<li class="hover">
 					<a href="<c:url value="/alm_consultaSalidas" />">
 						<i class="icon-exchange fa fa-caret-right"></i>
@@ -95,6 +99,10 @@
 					</a>
 					<b class="arrow"></b>
 				</li>
+
+				-->
+
+				<!--
 				<li class="hover">
 					<a href="<c:url value="adm_salidaVehiculo"/>">
 						<i class="icon-exchange fa fa-caret-right"></i>
@@ -102,6 +110,9 @@
 					</a>
 					<b class="arrow"></b>
 				</li>
+				-->
+
+
 				<li class="hover">
 					<a href="<c:url value="/listaPreVehiculoEstatus"/>">
 						<i class="icon-exchange fa fa-caret-right"></i>
@@ -121,13 +132,16 @@
 			</a>
 			<b class="arrow"></b>
 			<ul class="dropdown-menu" role="menu">
-				<li class="hover">
+
+				<!--<li class="hover">
 					<a href="<c:url value="/alm_regUbicaciones" />">
 						<i class="icon-adjust fa fa-caret-right"></i>
 						Captura Ubicaci&oacute;n
 					</a>
 					<b class="arrow"></b>
 				</li>
+				-->
+
 				<li class="hover">
 					<a href="<c:url value="/alm_getUbicaciones" />">
 						<i class="icon-adjust fa fa-caret-right"></i>
@@ -135,6 +149,9 @@
 					</a>
 					<b class="arrow"></b>
 				</li>
+
+
+
 			</ul><div style="display: none; top: 69px; left: 183px;" class="scroll-track scroll-detached no-track scroll-thin scroll-margin scroll-visible"><div style="top: 0px;" class="scroll-bar"></div></div>
 		</li>
 	</c:if>
@@ -148,13 +165,13 @@
 			<b class="arrow"></b>
 			<ul class="dropdown-menu" role="menu">
 		<c:if test="${(rolef eq 'ROLE_TIF')}">
-				<li class="hover">
+				<!-- <li class="hover">
 					<a href="<c:url value="ae_mandaRetemesTIF" />">
 						<i class="icon-dashboard fa fa-caret-right"></i>
 						Captura Retemes TIF
 					</a>
 					<b class="arrow"></b>
-				</li>
+				</li> -->
 				<li class="hover">
 					<a href="<c:url value="formaConsultaClienteFichaTecnica"/>">
 						<i class="icon-dashboard fa fa-caret-right"></i>
@@ -187,13 +204,13 @@
 			</li>
 			</c:if>
 		<c:if test="${(rolef eq 'ROLE_MAQUILA')}">
-			<li class="hover">
+			<!--<li class="hover">
 				<a href="<c:url value="ae_mandaRetemes" />">
 					<i class="icon-dashboard fa fa-caret-right"></i>
 					Captura Retemes
 				</a>
 				<b class="arrow"></b>
-			</li>
+			</li> -->
 			</c:if>
 				<c:if test="${(rolef eq 'ROLE_OPERACION') || (rolef eq 'ROLE_ADMIN') || (rolef eq 'ROLE_FACTURACION')}">
 				<li class="hover">
@@ -204,13 +221,15 @@
 					<b class="arrow"></b>
 				</li>
 
-					<li class="hover">
+					<!--<li class="hover">
 						<a href="<c:url value="ae_traspasos"/>">
 							<i class="icon-dashboard fa fa-caret-right"></i>
 							Traspasos Camara y T&uacute;nel
 						</a>
 						<b class="arrow"></b>
 					</li>
+					-->
+
 					<li class="hover">
 						<a href="<c:url value="/formConsultaTraspasos"/>">
 							<i class="icon-dashboard fa fa-caret-right"></i>
@@ -218,13 +237,14 @@
 						</a>
 						<b class="arrow"></b>
 					</li>
-					<li class="hover">
+					<!--<li class="hover">
 						<a href="<c:url value="ae_mandaRetemes" />">
 							<i class="icon-dashboard fa fa-caret-right"></i>
 							Captura Retemes
 						</a>
 						<b class="arrow"></b>
 					</li>
+					-->
 
 
 					<li class="hover">
@@ -235,29 +255,33 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="hover">
+					<!-- <li class="hover">
 						<a href="<c:url value="solicitudModificacion" />">
 							<i class="icon-dashboard fa fa-caret-right"></i>
 							Solicitud de Modificacion al Sistema
 						</a>
 						<b class="arrow"></b>
 					</li>
-					<li class="hover">
+					-->
+					<!--<li class="hover">
 						<a href="<c:url value="/formConsultaModificacionesFecha" />">
 							<i class="icon-dashboard fa fa-caret-right"></i>
 							Consulta Cambios al sistema
 						</a>
 						<b class="arrow"></b>
 					</li>
+					-->
+
 				</c:if>
 				<c:if test="${rolef eq 'ROLE_ADMIN' || (rolef eq 'ROLE_FACTURACION')}">
-					<li class="hover">
+					<!-- <li class="hover">
 						<a href="<c:url value="autorizarModificaciones" />">
 							<i class="icon-dashboard fa fa-caret-right"></i>
 							Atencion Modificaciones al Sistema
 						</a>
 						<b class="arrow"></b>
-					</li>
+					</li>-->
+
 				</c:if>
 			</ul><div style="display: none; top: 69px; left: 183px;" class="scroll-track scroll-detached no-track scroll-thin scroll-margin scroll-visible"><div style="top: 0px;" class="scroll-bar"></div></div>
 		</li>

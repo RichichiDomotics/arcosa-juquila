@@ -43,11 +43,11 @@
 						<span class="infobox-data-number"></span>
 						<div class="infobox-content">
 							<ul>
-								<li><a href="<c:url value="v_ingresoPreVehiculo"/>">
+								<!--<li><a href="<c:url value="v_ingresoPreVehiculo"/>">
 									<i class="icon-download-alt fa fa-caret-right"></i>
 									Pre-Registro de Vehiculos
 								</a>
-								</li>
+								</li>-->
 								<li><a href="<c:url value="v_listaPreVehiculo"/>">
 									<i class="icon-download-alt fa fa-caret-right"></i>
 									Consulta de Vehiculos
@@ -74,37 +74,51 @@
 						<span class="infobox-data-number"></span>
 						<div class="infobox-content">
 							<ul>
-								<li><a href="<c:url value="adm_ingresoVehiculo"/>">
+								<!--<li><a href="<c:url value="adm_ingresoVehiculo"/>">
 									<i class="icon-exchange fa fa-caret-right"></i>
 									Registra Ingreso de Vehiculos
 								</a>
-								</li>
-								<li>
+								</li> -->
+								<!--<li>
 									<a href="<c:url value="/alm_consultaIngresos" />">
 										<i class="icon-exchange fa fa-caret-right"></i>
 										Captura Ingresos
 									</a>
-									<ul>
-										<li>
+									<ul> -->
+										<!--<li>
 											<a href="<c:url value="/formatoIngreso" />" target="_blank">
 												<i class="icon-exchange fa fa-caret-right"></i>
 												Formato de Ingresos
 											</a>
-										</li>
+										</li>-->
+
+								<li class="hover">
+									<a href="<c:url value="/listaPreVehiculoEstatus"/>">
+										<i class="icon-exchange fa fa-caret-right"></i>
+										Consulta Ingreos y Salidas en proceso
+									</a>
+									<b class="arrow"></b>
+								</li>
+
+
+
+
+
+
 									</ul>
 								</li>
-								<li>
+								<!--<li>
 									<a href="<c:url value="/alm_consultaSalidas" />">
 										<i class="icon-exchange fa fa-caret-right"></i>
 										Captura Salidas
 									</a>
-								</li>
-								<li>
+								</li> -->
+								<!--<li>
 									<a href="<c:url value="adm_salidaVehiculo"/>">
 										<i class="icon-exchange fa fa-caret-right"></i>
 										Registra Salida de Vehiculos
 									</a>
-								</li>
+								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -121,14 +135,16 @@
 						<span class="infobox-data-number"></span>
 						<div class="infobox-content">
 							<ul>
-								<li><a href="<c:url value="alm_regUbicaciones"/>">
+								<!--<li><a href="<c:url value="alm_regUbicaciones"/>">
 									<i class="icon-adjust fa fa-caret-right"></i>
 									Captura Ubicaci&oacute;n</a>
-								</li>
+								</li>-->
 								<li><a href="<c:url value="alm_getUbicaciones"/>">
 									<i class="icon-adjust fa fa-caret-right"></i>
 									Consulta Ubicaci&oacute;n</a>
 								</li>
+
+
 							</ul>
 						</div>
 					</div>
@@ -146,12 +162,12 @@
 						<div class="infobox-content">
 							<ul>
 								<c:if test="${(rolef eq 'ROLE_TIF')}">
-									<li>
+									<!--<li>
 										<a href="<c:url value="ae_mandaRetemesTIF" />">
 											<i class="icon-dashboard fa fa-caret-right"></i>
 											Captura Retemes TIF
 										</a>
-									</li>
+									</li> -->
 									<li>
 										<a href="<c:url value="formaConsultaClienteFichaTecnica"/>">
 											<i class="icon-dashboard fa fa-caret-right"></i>
@@ -171,11 +187,11 @@
 								</a>
 								</li>
 								</c:if>
-								<c:if test="${(rolef eq 'ROLE_MAQUILA')}">
+								<!--<c:if test="${(rolef eq 'ROLE_MAQUILA')}">
 									<li><a href="<c:url value="ae_mandaRetemes"/>">
 										<i class="icon-dashboard fa fa-caret-right"></i>
 										Captura Retemes</a>
-									</li>
+									</li>-->
 								</c:if>
 								<c:if test="${(rolef eq 'ROLE_OPERACION') || (rolef eq 'ROLE_ADMIN') || (rolef eq 'ROLE_FACTURACION')}">
 								<li>
@@ -184,11 +200,11 @@
 										Ficha T&eacute;cnica del Cliente
 									</a>
 								</li>
-								<li><a href="<c:url value="ae_traspasos"/>">
+								<!--<li><a href="<c:url value="ae_traspasos"/>">
 									<i class="icon-dashboard fa fa-caret-right"></i>
 									Traspasos Camara y T&uacute;nel
 								</a>
-								</li>
+								</li>-->
 								<li>
 									<a href="<c:url value="/formConsultaTraspasos"/>">
 										<i class="icon-dashboard fa fa-caret-right"></i>
@@ -206,20 +222,20 @@
 								</a>
 								</li>
 
-								<li>
+								<!--<li>
 									<a href="<c:url value="solicitudModificacion" />">
 										<i class="icon-dashboard fa fa-caret-right"></i>
 										Solicitud de Modificacion al Sistema
 									</a>
-								</li>
+								</li>-->
 									</c:if>
 								<c:if test="${rolef eq 'ROLE_ADMIN'}">
-									<li>
+									<!--<li>
 										<a href="<c:url value="autorizarModificaciones" />">
 											<i class="icon-dashboard fa fa-caret-right"></i>
 											Atencion Modificaciones al Sistema
 										</a>
-									</li>
+									</li>-->
 								</c:if>
 							</ul>
 						</div>
