@@ -4,18 +4,20 @@ import org.hibernate.annotations.NamedQueries;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by jolvera on 11/05/2014.
  */
-    @Entity
-    @Table(name = "users")
-    @NamedQueries({
-            @org.hibernate.annotations.NamedQuery(name="user.findByUserName",
-                    query="SELECT c FROM User c where username = :username"),
-            @org.hibernate.annotations.NamedQuery(name="user.findByIdEjecutivo",
-                    query="SELECT c FROM User c where idEjecutivo = :idEjecutivo")
-    })
+@Entity
+@Table(name = "users")
+@NamedQueries({
+        @org.hibernate.annotations.NamedQuery(name="user.findByUserName",
+                query="SELECT c FROM User c where username = :username"),
+        @org.hibernate.annotations.NamedQuery(name="user.findByIdEjecutivo",
+                query="SELECT c FROM User c where idEjecutivo = :idEjecutivo")
+})
 
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -28,6 +30,11 @@ public class User implements Serializable {
     private String idEjecutivo;
     private String PERMISOS;
     private boolean enabled;
+
+
+    @OneToMany
+    @JoinColumn(name="username")
+    private Set<UserProfile> userProfiles = new HashSet<UserProfile>();
 
     public String getUsername() {
         return username;
@@ -68,4 +75,13 @@ public class User implements Serializable {
     public void setPERMISOS(String PERMISOS) {
         this.PERMISOS = PERMISOS;
     }
+
+    public Set<UserProfile> getUserProfiles() {
+        return userProfiles;
+    }
+
+    public void setUserProfiles(Set<UserProfile> userProfiles) {
+        this.userProfiles = userProfiles;
+    }
+
 }

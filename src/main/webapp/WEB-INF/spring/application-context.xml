@@ -30,6 +30,13 @@
 	<property name="accessDeniedUrl" value="403" />
    </bean>
 
+    <bean id="myUserDetailsService" class="com.cbj.almacen.service.CustomUserDetailsService"/>
+
+    <bean id="passwordEncoder"
+          class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+        <constructor-arg value="11"/>
+    </bean>
+
     <bean id="entityManagerFactory"
 	class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
 	p:dataSource-ref="dataSource"
